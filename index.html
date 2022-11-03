@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,29 +18,29 @@
                 <h1>/MA/</h1>
                 <nav id="nav" class="">
                     <ul id="links">
-                        <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                        <li><a href="#sobremi">SOBRE MI</a></li>
-                        <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contacto">CONTACTO</a></li>
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                        <li><a href="#conocimientos" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                     </ul>
                 </nav>
                 <!--iconos menú responsive-->
-                <div id="icono-nav">
+                <div id="icono-nav" onclick="responsiveMenu()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
                 <!--iconos redes sociales-->
                 <div class="redes">
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
             </header>
             <!--PRESENTACION-->
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos!</p>
                 <h2>Soy <span>Marcia Alegría</span>, Desarrollador Front End</h2>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Iste quia reprehenderit suscipit, ducimus adipisci aliquid nesciunt facilis maiores! 
                     Excepturi eius placeat distinctio iusto totam beatae magni ipsum animi quas pariatur?</p>
                 <a href="#portfolio">Ir a Portfolio</a>
@@ -50,7 +50,7 @@
     <!--SECCION SOBRE MI-->
     <section id="sobremi">
         <div class="contenedor-foto">
-            <img src="" alt="">
+            <img src="img/img/fot.jpeg" alt="">
         </div>
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mí</p>
@@ -62,7 +62,7 @@
             <a href="#">Descargar CV</a>
         </div>
     </section>
-    <!--SECCION SERVICIOS-->
+    <!--SECCION CONOCIMIENTOS-->
     <section id="conocimientos">
         <h3 class="titulo-seccion">MIS CONOCIMIENTOS</h3>
         <div class="fila">
@@ -102,6 +102,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, possimus ea cupiditate quo aspernatur sed exercitationem. 
                     Tenetur dolorem architecto eveniet vitae rem itaque id magnam?</p>
             </div>
+        </div>        
+        <div class="fila">
             <div class="conocimiento">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
                 <h4>Diseño de Sitios Web</h4>
@@ -137,7 +139,7 @@
                 </ul>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, possimus ea cupiditate quo aspernatur sed exercitationem. 
                     Tenetur dolorem architecto eveniet vitae rem itaque id magnam?</p>
-            </div>
+            </div>            
         </div>
     </section>
     <!--SECCION SKILLS-->
@@ -197,37 +199,37 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto1" alt="">
+                <img src="img/img/proyecto1.jpg" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto2" alt="">
+                <img src="img/img/proyecto2.jpg" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto3" alt="">
+                <img src="img/img/proyecto3" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto4" alt="">
+                <img src="img/img/proyecto4" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto5" alt="">
+                <img src="img/img/proyecto5" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto6" alt="">
+                <img src="img/img/proyecto6" alt="">
                 <h4 class="info">Proyects description</h4>
                 <p>web design</p>
             </div>
@@ -263,5 +265,6 @@
             <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

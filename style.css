@@ -9,20 +9,20 @@ html{
     scroll-behavior: smooth;
 }
 #inicio{
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("img/fondo-inicio.jpg");
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("img/img/fondo-inicio.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
-#inicio .contenido header{
+#inicio .contenido-header {
     background-color: rgba(0,0,0,.8);
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 100;
     top: 0;
 }
 #inicio .contenido header{
-    max-width: 1100px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -48,6 +48,7 @@ html{
 #inicio .contenido header nav ul a:hover{
     color: darkcyan;
 }
+
 #inicio .contenido header .redes a{
     text-decoration: none;
     color: #fff;
@@ -57,6 +58,9 @@ html{
 }
 #inicio .contenido header .redes a:hover{
     color: darkcyan;
+}
+#inicio .contenido header  .seleccionado {
+    color: #ff5080;
 }
 #inicio .contenido .presentacion{
     max-width: 1100px;
@@ -83,7 +87,7 @@ html{
     font-size: 25px;
     color: darkcyan;
 }
-#inicio .contenido .presentacion .description{
+#inicio .contenido .presentacion .descripcion{
     max-width: 700px;
     margin: 25px auto;
     font-size: 18px;
@@ -175,10 +179,9 @@ html{
 }
 /* SECCION CONOCIMIENTOS*/
 #conocimientos{
-    padding: 100px 15px;
+    padding: 100px 15px 100px 15px;
     text-align: center;
     background-color: #f3f3f3;
-
 }
 #conocimientos .titulo-seccion{
     font-size: 22px;
@@ -192,7 +195,7 @@ html{
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 30px auto 30px 30px;
 }
 #conocimientos .fila .conocimiento{
     max-width: 350px;
@@ -204,7 +207,6 @@ html{
 }
 #conocimientos .fila .conocimiento:hover{
     box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-
 }
 #conocimientos .fila .conocimiento h4{
     font-size: 22px;
@@ -237,10 +239,10 @@ html{
 }
 /*SECCION SKILLS */
 #skills{
-    background-color: rgba(106, 172, 200, 0.895);
+    background-color: darkcyan;
 }
 .contenedor-skills{
-    background: linear-gradient( #f3f3f3, rgba(33, 16,16,.8), );
+    background: linear-gradient( #f3f3f3, rgba(33, 16,16,.8)), url("img/img/fondo-skills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,31 +272,31 @@ html{
     margin: 10px, 0;
 }
 /*estilo aplicado con javascript para la animación de la barra */
-.contenedor-skills .skill .barra-progreso1{
+.contenedor-skills .skill .barra .barra-progreso1{
     background-color: #fff;
     width: 80%;
     height: 6px;
     animation: progreso1 2% forwards;
 }
-.contenedor-skills .skill .barra-progreso2{
+.contenedor-skills .skill .barra .barra-progreso2{
     background-color: #fff;
     width: 75%;
     height: 6px;
     animation: progreso2 2% forwards;
 }
-.contenedor-skills .skill .barra-progreso3{
+.contenedor-skills .skill .barra .barra-progreso3{
     background-color: #fff;
     width: 75%;
     height: 6px;
     animation: progreso3 2% forwards;
 }
-.contenedor-skills .skill .barra-progreso4{
+.contenedor-skills .skill .barra .barra-progreso4{
     background-color: #fff;
     width: 45%;
     height: 6px;
     animation: progreso4 2% forwards;
 }
-.contenedor-skills .skill .barra-progreso5{
+.contenedor-skills .skill .barra .barra-progreso5{
     background-color: #fff;
     width: 55%;
     height: 6px;
@@ -454,10 +456,95 @@ filter: grayscale(0);
     background-color: darkcyan;
     color: #fff;
 }
-
-
-
-
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+/*SECCION RESPONSIVE*/
+@media screen and (max-width: 800px){
+    .redes{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding: 10px;
+    }
+    nav.responsive ul{
+        display: block;
+        text-align: center;
+    }
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+    #icono-nav{
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    #skills{
+        padding: 50px 0;
+        display: block;
+    }
+    #portfolio{
+        padding: 50px 0;
+        display: block;
+    }
+    #portfolio .fila {
+        display: block;
+    }
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+    #contacto{
+        padding: 50px 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    footer{
+        padding: 50px 0;
+        display: block;
+    }
+}
 
 
 
