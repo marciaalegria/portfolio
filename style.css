@@ -357,7 +357,6 @@ html{
 }
 #portfolio .fila{
     display: flex;
-    justify-content: space-between;
     margin: 30px 0;
 }
 #portfolio .fila .proyecto{
@@ -378,6 +377,7 @@ html{
 filter: grayscale(0);
 }
 #portfolio .fila .proyecto .info{
+    text-decoration: none;
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
