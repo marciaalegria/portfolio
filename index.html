@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/index.css">
     <title>MA FrontEnd</title>
 </head>
 <body>
@@ -66,121 +66,86 @@
     <section id="conocimientos">
         <div class="contenedor-skills" id="skills">
             <h3>CONOCIMIENTOS</h3>
-            <div class="skill">
-                <div class="info">
-                    <p ><span class="lista"><i class="fa-brands fa-docker fa-lg" style="color: dodgerblue"></i></span>Docker</p>
-                    <span class="porcentaje">25%</span>
-                </div>
-                <div class="barra">
-                    <div id="html" class="barra-progreso1"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-square-js" style="color: #f0db4f"></i></span>Javascript</p>
-                    <span class="porcentaje">35%</span>
-                </div>
-                <div class="barra">
-                    <div id="js" class="barra-progreso2"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-react" style="color: 	#61dafb"></i></span>React</p>
-                    <span class="porcentaje">30%</span>
-                </div>
-                <div class="barra">
-                    <div id="react" class="barra-progreso3"></div>
-                </div>
-                <div class="skill">
+            <div class="cards">
+                <!-- <div class="skill">
                     <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-lg fa-html5" aria-hidden="true" style="color: #de4610"></i></span>Html</p>
-                        <span class="porcentaje">55%</span>
+                        <p ><span class="lista"><i class="fa-brands fa-docker fa-xl" style="color: dodgerblue"></i></span>Docker</p>   
                     </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso4"></div>
+                </div> -->
+                <div class="skill">
+                    <div class="card">
+                        <div class="icons" ><i class="fa-brands fa-square-js" style="color: #f0db4f"></i></div>
+                        <div>Javascript</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-node" style="color: #68a063"></i></span>Node</p>
-                        <span class="porcentaje">35%</span>
-                    </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso5"></div>
+                    <div class="card">
+                        <div ><img src="img/img/9114856761551941711-128.png" alt="Girl in a jacket" width="40" height="80"></div>
+                        <div>Next</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-npm" style="color: #cb3837"></i></span>Npm</p>
-                        <span class="porcentaje">35%</span>
+                    <div class="card">
+                        <div ><i class="fa-brands fa-react" style="color: 	#61dafb"></i></div>
+                        <div>React</div>
                     </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso6"></div>
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-lg fa-html5" aria-hidden="true" style="color: #de4610"></i></div>
+                            <div>html</div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-discord" style="color: rgb(128, 11, 128)"></i></span>Discord</p>
-                        <span class="porcentaje">85%</span>
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-node" style="color: #68a063"></i></div> 
+                            <div>Node</div>
+                        </div>
                     </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso7"></div>
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-npm" style="color: #cb3837"></i></div>
+                            <div>Npm</div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-solid fa-lg fa-f" style="color: rgb(25, 25, 172);"></i></span>Formik</p>
-                        <span class="porcentaje">55%</span>
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-discord" style="color: rgb(128, 11, 128)"></i></div>
+                            <div>Discord</div>
+                        </div>
                     </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso8"></div>
+                    <!-- <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"><i class="fa-solid fa-lg fa-f" style="color: rgb(25, 25, 172);"></i></span>Formik</p>
+                        </div>
+                    </div> -->
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-jira" style="color: dodgerblue"></i></div>
+                            <div>Jira</div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-jira" style="color: dodgerblue"></i></span>Jira</p>
-                        <span class="porcentaje">75%</span>
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-lg fa-css3" aria-hidden="true" style="color: #2965f1"></i></div>
+                            <div>Css</div>
+                        </div>
                     </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso9"></div>
+                    <!-- <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"><i class="fa-solid fa-database" style="color: #2965f1;"></i></span>PostgreSQL</p>
+                        </div>
+                    </div> -->
+                    <div class="skill">
+                        <div class="card">
+                            <div><i class="fa-brands fa-github-alt" style="color: rgb(8, 8, 8)"></i></div>
+                            <div>Github</div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-lg fa-css3" aria-hidden="true" style="color: #2965f1"></i></span>Css</p>
-                        <span class="porcentaje">75%</span>
-                    </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso10"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-solid fa-database" style="color: #2965f1;"></i></span>PostgreSQL</p>
-                        <span class="porcentaje">35%</span>
-                    </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso11"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-github-alt" style="color: rgb(8, 8, 8)"></i></span>Github</p>
-                        <span class="porcentaje">35%</span>
-                    </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso12"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="info">
-                        <p><span class="lista"><i class="fa-brands fa-sass" style="color: #cc6699"></i></span>Sass</p>
-                        <span class="porcentaje">35%</span>
-                    </div>
-                    <div class="barra">
-                        <div id="vuejs" class="barra-progreso13"></div>
-                    </div>
+                    <!-- <div class="skill">
+                        <div class="info">
+                            <p><span class="lista"><i class="fa-brands fa-sass" style="color: #cc6699"></i></span>Sass</p>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -193,7 +158,6 @@
                 <div class="overlay"></div>
                 <img src="img/img/image-cuppon.jpeg" alt="">
                 <a href="https://marciaalegria.github.io/cuppon./" class="info">Ver</a>
-                
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
@@ -238,10 +202,8 @@
                         <textarea name="" id="" cols="30" rows="10" name="comments" placeholder="Tu mensaje..." class="input-full"></textarea>
                     </div>
                     <input type="submit" value="Enviar Mensaje" class="btn-enviar">
-                    <input type="hidden" name="_next" value="https://marciaalegria.github.io/portfolio/" >
+                    <input type="hidden" name="_next" value="https://marcia-alegria-develop.netlify.app/" >
                     <input type="hidden" name="_captcha" value="false" >
-
-
                 </form>
             </div>
         </div>

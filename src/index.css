@@ -178,11 +178,8 @@ html{
     color: #fff;
 }
 /*SECCION SKILLS */
-#skills{
-    background-color: darkcyan;
-}
 .contenedor-skills{
-    background: linear-gradient( #f3f3f3, rgba(33, 16,16,.8)), url("img/img/fondo-skills.jpg");
+    background: linear-gradient( #f3f3f3, rgba(33, 16,16,.8)), url("/img/img/fondo-skills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,105 +187,22 @@ html{
     padding: 100px 0;
     text-align: center;
 }
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color: #fff;
+    width: 8rem;
+    height: 10rem;
+    opacity: 55%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
 .contenedor-skills .skill{
     max-width: 600px;
     margin: 30px auto;
 }
-.contenedor-skills .skill .info{
-    display: flex;
-    justify-content: space-between;
-}
-.contenedor-skills .skill .lista{
-    display: inline-block;
-    margin-right: 20px;
-    height: 25px;
-    width: 25px;
-}
-.contenedor-skills .skill .barra{
-    background-color: #919191;
-    width: 100%;
-    height: 5px;
-    margin: 10px, 0;
-}
-/*estilo aplicado con javascript para la animación de la barra */
-.contenedor-skills .skill .barra .barra-progreso1{
-    background-color: #fff;
-    width: 25%;
-    height: 6px;
-    animation: progreso1 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso2{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso2 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso3{
-    background-color: #fff;
-    width: 30%;
-    height: 6px;
-    animation: progreso3 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso4{
-    background-color: #fff;
-    width: 45%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso5{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso6{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso7{
-    background-color: #fff;
-    width: 85%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso8{
-    background-color: #fff;
-    width: 55%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso9{
-    background-color: #fff;
-    width: 75%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso10{
-    background-color: #fff;
-    width: 75%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso11{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso12{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
-.contenedor-skills .skill .barra .barra-progreso13{
-    background-color: #fff;
-    width: 35%;
-    height: 6px;
-    animation: progreso4 2% forwards;
-}
+
 /* animaciones de las barras*/
 @keyframes progreso1 {
     0%
@@ -310,36 +224,7 @@ html{
         width: 75%;
     }
 }
-@keyframes progreso3 {
-    0%
-    { 
-        width: 0;
-    }
-    100%
-    { 
-        width: 70%;
-    }
-}
-@keyframes progreso4 {
-    0%
-    { 
-        width: 0;
-    }
-    100%
-    { 
-        width: 45%;
-    }
-}
-@keyframes progreso5 {
-    0%
-    { 
-        width: 0;
-    }
-    100%
-    { 
-        width: 55%;
-    }
-}
+
 /*SECCION PORTFOLIO*/
 #portfolio{
     max-width: 1100px;
@@ -370,9 +255,9 @@ html{
     position: relative;
     width: 100%;
     height: 100%;
-    filter: grayscale(1);
+    filter: grayscale(25%);
     object-fit: cover;
-    transition: .5s;
+    transition: 1s;
 }
 #portfolio .fila .proyecto:hover img{
 filter: grayscale(0);
@@ -533,7 +418,9 @@ footer a{
         display: block;
     }
 }
-
+.icons {
+    size: 70rem;
+}
 
 
 
